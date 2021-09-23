@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     paragraph.style.textAlign = 'center'
 
     paragraph.addEventListener("click", function () {
-        paragraph.style.color = randomColor
+        paragraph.style.color = generateRandomColor()
     })
     function generateRandomColor() {
         let letters = '0123456789ABCDEF';
