@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.body.appendChild(colorchange)
     colorchange.textContent = '3'
-    
+
     colorchange.style.textAlign = 'center'
     colorchange.style.backgroundColor = 'pink'
     colorchange.style.borderColor = 'black'
-    colorchange.style.border = 'solid' 
+    colorchange.style.border = 'solid'
     colorchange.style.width = '100px'
     colorchange.style.height = '100px'
 
@@ -35,30 +35,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     paragraph.style.textAlign = 'center'
 
-    paragraph.addEventListener("click", function(){
+    paragraph.addEventListener("click", function () {
         paragraph.style.color = randomColor
     })
     function generateRandomColor() {
         let letters = '0123456789ABCDEF';
         let color = '#';
         for (let i = 0; i < 6; i++) {
-          color += letters[Math.floor(Math.random() * 16)];
+            color += letters[Math.floor(Math.random() * 16)];
         }
         return color;
-      }
-      
-      let randomColor=generateRandomColor();//"#F10531"
+    }
+
+    let randomColor = generateRandomColor();//"#F10531"
+
+    let nameContainer = document.createElement("div")
     let nameBtn = document.createElement("button")
     let btnName = document.createTextNode('Click me again!')
     nameBtn.appendChild(btnName)
     document.body.appendChild(nameBtn)
 
     nameBtn.addEventListener("click", function () {
-        let nameDiv = document.createElement("div");
-        let divText = document.createTextNode("5. Quincy S.");
-        nameDiv.appendChild(divText)
-        document.body.appendChild(nameDiv)
+        let nameSpan = document.createElement("span");
+        let spanText = document.createTextNode("5. Quincy S.");
+        nameContainer.appendChild(nameSpan)
+        nameSpan.appendChild(spanText)
+        document.body.appendChild(nameSpan)
     })
+    
 })
 
 
