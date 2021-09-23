@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
         window.alert("Hello! How are you doing this fine evening?!?!?!");
     })
-
 })
 
 function feelsalrt() {
