@@ -48,7 +48,19 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       
       let randomColor=generateRandomColor();//"#F10531"
+    let nameBtn = document.createElement("button")
+    let btnName = document.createTextNode('Click me again!')
+    nameBtn.appendChild(btnName)
+    document.body.appendChild(nameBtn)
+
+    nameBtn.addEventListener("click", function () {
+        let nameDiv = document.createElement("div");
+        let divText = document.createTextNode("5. Quincy S.");
+        nameDiv.appendChild(divText)
+        document.body.appendChild(nameDiv)
+    })
 })
+
 
 function feelsalrt() {
     if (confirm("2. Do you want to update message??")) {
