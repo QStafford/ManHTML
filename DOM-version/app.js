@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(button)
 
     button.addEventListener("click", function () {
-        window.alert("Hello! How are you doing this fine evening?!?!?!");
+        window.alert("1. Hello! How are you doing this fine evening?!?!?!");
     })
 })
 
 function feelsalrt() {
-    if(confirm("Do you want to update message??")){
-        confirm(document.getElementById("feelsbox").value)
+    if(confirm("2. Do you want to update message??")){
+        alert(document.getElementById("feelsbox").value)
     }
 }
