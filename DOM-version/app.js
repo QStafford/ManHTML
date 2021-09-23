@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let colorchange = document.createElement("div")
 
     document.body.appendChild(colorchange)
+    colorchange.textContent = '3'
     
+    colorchange.style.textAlign = 'center'
     colorchange.style.backgroundColor = 'pink'
     colorchange.style.borderColor = 'black'
     colorchange.style.border = 'solid' 
@@ -26,7 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
         colorchange.style.backgroundColor = 'pink'
     })
 
-
+    let paragraph = document.createElement("p")
+    let pText = document.createTextNode("This is gonna be my Test paragraph")
+    paragraph.appendChild(pText)
+    document.body.appendChild(paragraph)
 
 })
 
