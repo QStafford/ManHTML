@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     colorchange.textContent = '3'
 
     colorchange.style.textAlign = 'center'
-    colorchange.style.backgroundColor = 'pink'
     colorchange.style.borderColor = 'black'
     colorchange.style.border = 'solid'
     colorchange.style.width = '100px'
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         colorchange.style.backgroundColor = 'purple'
     })
     colorchange.addEventListener('mouseleave', function () {
-        colorchange.style.backgroundColor = 'pink'
+        colorchange.style.backgroundColor = ''
     })
 
     let paragraph = document.createElement("p")
