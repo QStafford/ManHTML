@@ -29,10 +29,25 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     let paragraph = document.createElement("p")
-    let pText = document.createTextNode("This is gonna be my Test paragraph")
+    let pText = document.createTextNode("4. This is gonna be my Test paragraph")
     paragraph.appendChild(pText)
     document.body.appendChild(paragraph)
 
+    paragraph.style.textAlign = 'center'
+
+    paragraph.addEventListener("click", function(){
+        paragraph.style.color = randomColor
+    })
+    function generateRandomColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      
+      let randomColor=generateRandomColor();//"#F10531"
 })
 
 function feelsalrt() {
