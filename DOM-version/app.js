@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 let friends = ['Diego', 'Jerry', 'Kevin', 'Hunter', 'Chase1', 'Chase2', 'Jarvis', 'Alex1', 'Alex2', 'Raymond']
+
 function feelsalrt() {
     if (confirm("2. Do you want to update message??")) {
         alert(document.getElementById("feelsbox").value)
