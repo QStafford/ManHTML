@@ -11,3 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })
 
+function secnalrt() {
+    let txt;
+    if (confirm("I hope you're ready for the ride of your life oooh boi!")){
+    }
+}
