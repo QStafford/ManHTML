@@ -5,5 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     button.appendChild(btnText)
     document.body.appendChild(button)
 
+    button.addEventListener("click", function () {
+        window.alert("Hello! How are you doing this fine evening?!?!?!");
+    })
+
 })
 
